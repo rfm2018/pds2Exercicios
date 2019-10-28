@@ -1,8 +1,8 @@
 #include "forma.h"
 
-class Forma2d : public Forma {
+class Forma3d : public Forma {
 
-    virtual double get_volume();
+    double get_volume();
 
 
 }
