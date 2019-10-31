@@ -4,9 +4,10 @@
 
 #include "forma.h"
 
-class Forma3d : public Forma {
+class Forma3D : public Forma {
+    public:
 
-    double get_volume();
+    virtual double get_volume(){return 0;} ;
 
 
 };

@@ -3,16 +3,18 @@
 
 #include "forma2d.h"
 
-class Quadrado : public Forma2d {
+class Quadrado : public Forma2D {
     public:
 
         double lado;
 
-        Quadrado (std::string _cor, std::string _nome, double _lado);
+        Quadrado (std::string _cor, double _lado);
 
         double get_area();
 
         double get_perimetro();
+        
+        std::string get_nome();
 
 
 };

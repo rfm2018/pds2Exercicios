@@ -3,10 +3,11 @@
 
 #include "forma.h"
 
-class Forma2d : public Forma {
+class Forma2D : public Forma {
+    public:
 
-    double get_area();
-    double get_perimetro();
+    virtual double get_area(){return 0;} ;
+    virtual double get_perimetro(){return 0;};
 
 
 };

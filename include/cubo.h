@@ -3,14 +3,16 @@
 
 #include "forma3d.h"
 
-class Cubo : public Forma3d {
+class Cubo : public Forma3D {
     public:
 
         double lado;
 
-        Cubo (std::string _cor, std::string _nome, double _lado);
+        Cubo (std::string _cor, double _lado);
 
         double get_volume();
+        
+        std::string get_nome();
 
 
 };

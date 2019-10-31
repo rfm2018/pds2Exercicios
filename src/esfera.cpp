@@ -2,10 +2,9 @@
 #include <iostream>
 #include "../include/esfera.h"
 
-Esfera::Esfera(std::string _cor, std::string _nome, double _raio){
+Esfera::Esfera(std::string _cor, double _raio){
 
     this-> cor = _cor;
-    this-> nome = _nome; 
     this-> raio = _raio;
     
 }
@@ -14,6 +13,13 @@ Esfera::Esfera(std::string _cor, std::string _nome, double _raio){
 
 double Esfera::get_volume(){
 
-    return 3.14*(4/3)*pow(this->raio, 3);
+    return 3.141592*(1.33333)*pow(this->raio, 3);
 
 }
+
+
+std::string Esfera::get_nome(){
+    
+    return "esfera";
+    
+};
